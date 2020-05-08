@@ -1,0 +1,19 @@
+App.php : -      // _construct là biến đặc biệt khi bạn tạo cái biến có kiểu app thì nó sẽ chạy ngay _construct
+
+
+file .htaccess trong mvc : Chống người khác xem các thư mục trong mvc
+http://localhost:8000/PhpMVC/live/mvc/
+
+
+bài 2: models 
+
+-   Tạo core/Controler để tự gọi models thông qua biến
+
+-Bridge.php require thêm Controler
+-Home ,News có thể kế thừa Controler để gọi model
+- Luôn phải tạo mới chính controler trong app để home hoạt động
+        $this->controller= new $this->controller;
+
+
+Home -> thông qua Controler(kế thừa Controler) để gọi chính xác model-
+ trả dữ liệu hàm cho Home
