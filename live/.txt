@@ -17,3 +17,7 @@ bài 2: models
 
 Home -> thông qua Controler(kế thừa Controler) để gọi chính xác model-
  trả dữ liệu hàm cho Home
+
+
+database : co the ket noi truc tiep cau hinh (localhost,username,password,db)
+ or để ra file riêng .nv(environment)

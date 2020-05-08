@@ -4,7 +4,7 @@
 
 class Home extends Controller{
     function SayHi(){
-     //case 1:
+     //case 1:dung middleware
         $teo = $this->model('SinhVienModel');
       echo $teo->GetSV();
       
@@ -14,13 +14,17 @@ class Home extends Controller{
     //     echo $teo->GetSV();
     }
     function Show($a,$b){
+        //model
          $teo = $this->model('SinhVienModel');
         $tong =  $teo->tong($a,$b); //$tong =3
-      $this->view("aodep",
+      
+        //views
+        $this->view("aodep",
       ["Number"=>$tong,
         "Page"=>"news",
         "Mau" => "red",
-        "SoThich"=>["a","b","c"]
+        "SoThich"=>["a","b","c"],
+        "SV" =>$teo->SinhVien()
       ]);
     }
 }
