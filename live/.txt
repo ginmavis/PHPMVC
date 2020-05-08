@@ -21,3 +21,8 @@ Home -> thông qua Controler(kế thừa Controler) để gọi chính xác mode
 
 database : co the ket noi truc tiep cau hinh (localhost,username,password,db)
  or để ra file riêng .nv(environment)
+
+
+ sua giao dien (sua view)
+ them chuc nang (man hinh - home (controler))
+ sua cau truc database (model)
