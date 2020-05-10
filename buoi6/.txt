@@ -1,0 +1,6 @@
+1 -  Khi lấy data từ database(models) k trả về  mysqli  "  return  mysqli_query($this->con,$qr); "
+ vì nó chỉ có php đọc được , adroid , angula thì k
+
+ ta phải chuyển sang mảng json
+
+ 
