@@ -10,15 +10,30 @@
 
     </tr>
   <?php 
-  while($r= mysqli_fetch_assoc($data["categories"])){
+  // while($r= mysqli_fetch_assoc($data["categories"])){
+  //     echo "<tr>";
+  //     echo "<td>".$r["id"]."</td>";
+  //     echo "<td>".$r["Name"]."</td>";
+  //     echo "<td>".$r["ordering"]."</td>";
+  //     echo "<td>".$r["active"]."</td>";
+  //     echo "</tr>";
+  // }
+
+    // echo "<pre>";
+    // var_dump(json_decode($data["categories"]));
+    // echo "</pre>";
+    
+    $kq = json_decode($data["categories"],true);
+    foreach ($kq as $item => $r) {
       echo "<tr>";
       echo "<td>".$r["id"]."</td>";
       echo "<td>".$r["Name"]."</td>";
       echo "<td>".$r["ordering"]."</td>";
       echo "<td>".$r["active"]."</td>";
       echo "</tr>";
-  }
-  
+    }
+    
+
   ?>
   </table>
 

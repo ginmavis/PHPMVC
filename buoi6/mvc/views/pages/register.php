@@ -3,7 +3,11 @@
 <form action="./Register/KhachHangDangKi" method="POST">
   <div class="form-group">
     <label>Username</label>
-    <input type="text" name="username" class="form-control"  placeholder="Enter user">
+    <input type="text" name="username" id="username" class="form-control"  placeholder="Enter user">
+<div id="messageUn">  
+</div>
+  
+
   </div>
     <!--  -->
   <div class="form-group">
